@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feed App</title>
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<link rel="stylesheet" href="style.css">
+</head>
+<body>   
+<div class="container">       
+<header>
+            <h1 class="logo">Feed<span>App</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Social</a></li>
+                    <li><a href = "{% url 'logout' %}" class="btn btn-primary">Logout </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Stay up-to-date</h1>
+                    <p>Never miss a beat with our curated feed of news and social updates.</p>
+                </div>
+            </div>
+
+            <section class="feed">
+                <h2 class="feed-title">News</h2>
+                <div class="feed-items">
+                    <div class="feed-item">
+                        <img src="chocolate.jpg" alt="Chocolate">
+                        <h2>New study shows that eating chocolate can improve your mood.</h2>
+                    </div>
+                    <div class="feed-item">
+                        <img src="vaccine.jpg" alt="Vaccine">
+                        <h2>Scientists develop new vaccine that could prevent cancer.</h2>
+                    </div>
+                    <div class="feed-item">
+                        <img src="stock-market.jpg" alt="Stock Market">
+                        <h2>Stock market rebounds after major sell-off.</h2>
+                    </div>
+                    <div class="feed-item">
+                        <img src="president.jpg" alt="President">
+                        <h2>President gives speech on the economy.</h2>
+                    </div>
+                    <div class="feed-item">
+                        <img src="movie.jpg" alt="Movie">
+                        <h2>New movie trailer released for upcoming superhero blockbuster.</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feed">
+                <h2 class="feed-title">Social</h2>
+                <div class="feed-items">
+                    <div class="feed-item">
+                        <img src="facebook.jpg" alt="Facebook">
+                        <h2>Your friend John just shared a new photo on Facebook.</h2>
+                    </div>
+                    <div class="feed-item">
+                        <img src="twitter.jpg" alt="Twitter">
+                        <h2>Your friend Mary just shared a new link on Twitter.</h2>
+                    </div>
+                    <div class="feed-item">
+                        <img src="instagram.jpg" alt="Instagram">
+                        <h2>Your friend Susan just commented on your latest Instagram post.</h2>
+                    </div>
+                    <div class="feed-item">
+                        <img src="facebook-group.jpg" alt="Facebook Group">
+                        <h2>A group you joined on Facebook is having a discussion.</h2>
+                    </div>
+                    <div class="feed-item">
+                        <img src="meetup.jpg" alt="Meetup">
+                        <h2>A new event has been created on Meetup.</h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Feed App</p>
+        </footer>
+    </div>
+</body>
+</html>
